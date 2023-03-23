@@ -95,7 +95,7 @@ public class LoginFilter implements Filter {
             return;
         }
 
-        log.info("用户未登录");
+        log.info("用户未登录 NOLOGIN");
         response.getWriter().write(JSON.toJSONString(R.error("NOTLOGIN")));
         return;
 
